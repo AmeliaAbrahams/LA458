@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Amelia Abrahams Assignment 3</title>
+</head>
+    
+<style>
+    H3 {
+        color: #751B4E;
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid black;
+        background-color: white;
+    }   
+    H5 {
+        color: #CA31DB;
+        padding: 3px;
+        margin: 5px;
+        border: 1px solid black;
+        background-color: white;
+    }
+      body {
+        background-color: #DFF0EC;
+    }
+    a {
+        border: 1px solid black;  
+        margin; 0;
+        background-color: #E8DDF0;
+        padding: 5px;
+    }
+    
+    
+</style>
+<body>
+    <h3>Assignment 3</h3>
+    <h5>Amelia Abrahams</h5>
+    
+    <br>
+    <a href="#" onclick="changeMap('basemapLandcover')">Basemap</a> &nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="changeMap('iowaBorder')">Iowa Border</a> &nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="changeMap('scenicByways')">Scenic Byways</a> &nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="changeMap('bedBreakfast')">Bed and Breakfasts</a> &nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="changeMap('vineyards')">Vineyards</a> &nbsp;&nbsp;&nbsp;
+    <br>
+    
+    <img id="myMap" src="images/basemapLandcover.png" alt="basemapLandcover" width="600" height="400">      
+         
+</body>
+    <script>
+     function changeMap(x){
+       document.getElementById("myMap").src = "images/"+ x +".png";
+         
+     }
+        //changeMap("vineyards");
+        
+    </script>
+</html>
