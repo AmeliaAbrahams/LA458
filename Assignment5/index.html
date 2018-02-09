@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>AbrahamsAssignment5</title>
+</head>
+<body>
+  <h1>Assignment 5</h1>
+   <div id="horses">How much do you know about horses?<br> 
+  <form>
+    
+    <input type="radio" name="knowledge" id="soMuch" onchange= "knowledgeFunction()">So much. I could be an expert.<br>
+    <p id="horseTeach" style="display:none">No one can ever be an expert with horses. The horse will always teach you something new.</p>
+   
+    <input type="radio" name="knowledge" id="Little"onchange= "knowledgeFunction2()">Very little knowledge.<br>
+    <p id="littleTeach" style="display:none">It is great to have humility.</p>
+   
+    <input type="radio" name="knowledge" id="none"onchange= "knowledgeFunction3()">Absolutely none.<br>
+    <p id="noneTeach" style="display:none">Then you should learn, because horses are amazing.</p>
+  
+    <input type="radio" name="knowledge" id="what"onchange= "knowledgeFunction4()">What is a horse?
+    <p id="whatTeach" style="display:none">Jeez.</p>
+  </form>
+    <hr>
+   
+Check your favorite types of music.
+  <form>
+    <input type="checkBox" name="music" value="Jazz" onchange="musicFunction()">Jazz<br>
+    <input type="checkBox" name="music" value="Rock" onchange="musicFunction()">Rock<br>
+    <input type="checkBox" name="music" value="Country" onchange="musicFunction()">Country<br>
+    <input type="checkBox" name="music" value="Pop" onchange="musicFunction()">Pop
+  </form>
+    <hr>
+  </form>
+  <form>
+    
+    Favorite season: <input type="text" name="favoriteSeason" ><br>
+  </form>
+  <hr>
+Embedded map of Albion, Iowa using Google Maps. 
+  <br>
+  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Albion%2C%20iowa&key=AIzaSyAcyOKjZSz7n7Ww_m1U7VOUIm1nOSX0Tq4" allowfullscreen></iframe>
+<script src="script.js"></script>
+</body>
+</html>
